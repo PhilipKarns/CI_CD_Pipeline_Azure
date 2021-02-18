@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#for Continuous Delivery
+.DS_Store
+.DS_Store?
