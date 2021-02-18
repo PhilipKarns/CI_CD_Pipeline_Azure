@@ -1,6 +1,7 @@
 # CI_CD_Pipeline_Azure
 building a continuous integration and continuous delivery pipeline for a Flask machine learning application in Python
 
+<<<<<<< HEAD
 # Overview
 
 <TODO: complete this with an overview of your project>
@@ -51,3 +52,6 @@ Port: 443
 
 <TODO: Add link Screencast on YouTube>
 
+=======
+![Python application test with Github Actions](https://github.com/PhilipKarns/CI_CD_Pipeline_Azure/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
+>>>>>>> 55093ffc384c3972fb7a26e5b3f5fbe7e60f4d7d
