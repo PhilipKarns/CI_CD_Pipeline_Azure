@@ -2,13 +2,12 @@
 Building a Continuous Integration and Continuous Delivery pipeline for a Flask machine learning application in Python
 
 # Overview
-This project will start with cloning a github repo in Azure Cloud Shell, followed by creating project scaffolding for Continuous Integration which includes a Makefile, requirments.txt, 
+This project will start with cloning a github repo in Azure Cloud Shell, followed by creating project scaffolding for Continuous Integration which includes a Makefile, requirements.txt, 
 a Python Virtual Environment, a Python script and test file for the script. Then, it will use GitHub Actions to test our project when change events occur in GitHub. GitHub Actions will
 automatically build our project, performing install, lint and test actions to verify our tests pass, and this step completes the Continuous Integration portion of the project. Finaly,
 this project will be integrated with Azure Pipelines to enable Continuous Delivery to Azure App Service using a Flask Machine Learning API.
 
 ## Project Plan
-<TODO: Project Plan
 
 ### Trello Board
 https://trello.com/b/7KN3nSMa/build-devops-process-to-deploy-ml-app
@@ -17,7 +16,7 @@ https://trello.com/b/7KN3nSMa/build-devops-process-to-deploy-ml-app
 https://docs.google.com/spreadsheets/d/1vs-qzjjO7mzfw8u8LQUzjz72jgQyWUKWP8PfD2kf7fs/edit#gid=0
 
 ## Architectural Diagram
-![architecture diagram](./images/Architectural.PNG)
+![architectural Diagram](./images/ArchitecturalDiagram.PNG)
 
 ## Instructions
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
@@ -56,6 +55,9 @@ Run the Make All command to install, lint, and test the code using the Makefile.
 :white_check_mark: Create an App Service 
 :white_check_mark: Verify the deployed application works
 :white_check_mark: Perform a prediction
+:white_check_mark: Azure Pipelines Deployment
+:white_check_mark: Running Azure App Service from Azure Pipelines
+
 
 To set up the virtual environment, first enter command  python3 -m venv ~/.CI_CD_Pipeline_Azure and hit enter. Then enter command 
 source ~/.CI_CD_Pipeline_Azure/bin/activate and hit enter 
@@ -74,27 +76,21 @@ To perform a prediction, first go into the make_predict_azure_app.sh file and ch
 Then run command ./make_predict_azure_app.sh to get a prediction
 ![App Service Prediction](./images/appservice-prediction.PNG)
 
+To complete the Continuous Delivery, I've set up this Machine Learning Application to deploy in Azure Pipelines within the Azure devops
+environment. Here is an example of a recent successful deployment: 
+![Azure Pipelines Deployment](./images/azure-piplines-deployment.PNG)
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+And if I click on Deploy Web App from the above screen, we can see the URL of the successfully deployed Flask app, and if we click on it 
+we see the running app service application.
+![Azure Pipelines Deployment](appservice-deployed-azurepipelines.PNG)
+![Azure Pipelines Deployment](appservice-deployed-azurepipelines-url.PNG)
 
-* Running Azure App Service from Azure Pipelines automatic deployment
-
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
+Here is the output of the log files from the application:
+![Running App Log Files](log-files.PNG)
 
 ## Enhancements
-
-<TODO: A short description of how to improve the project in the future>
+- this project could be improved by setting up additional machine learning predictions for housing in other major cities
+- we could also use GitHub Actions for deployment instead of Azure Pipelines
 
 ## Demo 
 
