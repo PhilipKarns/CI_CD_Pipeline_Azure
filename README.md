@@ -82,11 +82,11 @@ environment. Here is an example of a recent successful deployment:
 
 And if I click on Deploy Web App from the above screen, we can see the URL of the successfully deployed Flask app, and if we click on it 
 we see the running app service application.
-![App Service Deployed](appservice-deployed-azurepipelines.PNG)
-![App Service Deployed URL](appservice-deployed-azurepipelines-url.PNG)
+![App Service Deployed](./images/appservice-deployed-azurepipelines.PNG)
+![App Service Deployed URL](./images/appservice-deployed-azurepipelines-url.PNG)
 
 Here is the output of the log files from the application:  
-![Running App Log Files](log-files.PNG)
+![Running App Log Files](./images/log-files.PNG)
 
 ## Enhancements
 - this project could be improved by setting up additional machine learning predictions for housing in other major cities
