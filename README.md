@@ -67,10 +67,10 @@ To create your app service, first run command make install to install any requir
 az webapp up -n yourappservicename. Your app service name has to be one that hasn't already been used. Here's mine:
 ![Create App Service](./images/appservice-create.PNG)
 
-Click on the URL to see your deployed app service:
+Click on the URL to see your deployed app service:  
 ![Deployed App Service](./images/appservice-url-running.PNG)
 
-To perform a prediction, first go into the make_predict_azure_app.sh file and change the app name to the one you created:
+To perform a prediction, first go into the make_predict_azure_app.sh file and change the app name to the one you created:  
 ![Change App Service Name](./images/make-predict-changeappname.PNG)
 
 Then run command ./make_predict_azure_app.sh to get a prediction
@@ -82,10 +82,10 @@ environment. Here is an example of a recent successful deployment:
 
 And if I click on Deploy Web App from the above screen, we can see the URL of the successfully deployed Flask app, and if we click on it 
 we see the running app service application.
-![Azure Pipelines Deployment](appservice-deployed-azurepipelines.PNG)
-![Azure Pipelines Deployment](appservice-deployed-azurepipelines-url.PNG)
+![App Service Deployed](appservice-deployed-azurepipelines.PNG)
+![App Service Deployed URL](appservice-deployed-azurepipelines-url.PNG)
 
-Here is the output of the log files from the application:
+Here is the output of the log files from the application:  
 ![Running App Log Files](log-files.PNG)
 
 ## Enhancements
@@ -98,4 +98,4 @@ Here is the output of the log files from the application:
 
 =======
 ![Python application test with Github Actions](https://github.com/PhilipKarns/CI_CD_Pipeline_Azure/workflows/Python+application+test+with+Github+Actions/badge.svg)
->>>>>>> 55093ffc384c3972fb7a26e5b3f5fbe7e60f4d7d
+<!-- >>>>>>> 55093ffc384c3972fb7a26e5b3f5fbe7e60f4d7d -->
