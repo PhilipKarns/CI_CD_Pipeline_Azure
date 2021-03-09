@@ -96,6 +96,5 @@ Here is the output of the log files from the application:
 
 <TODO: Add link Screencast on YouTube>
 
-=======
-![Python application test with Github Actions](https://github.com/PhilipKarns/CI_CD_Pipeline_Azure/workflows/Python+application+test+with+Github+Actions/badge.svg)
+[![Python application test with Github Actions](https://github.com/PhilipKarns/CI_CD_Pipeline_Azure/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/PhilipKarns/CI_CD_Pipeline_Azure/actions/workflows/pythonapp.yml)
 <!-- >>>>>>> 55093ffc384c3972fb7a26e5b3f5fbe7e60f4d7d -->
