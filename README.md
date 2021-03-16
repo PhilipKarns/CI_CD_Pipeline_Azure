@@ -18,11 +18,9 @@ https://docs.google.com/spreadsheets/d/1vs-qzjjO7mzfw8u8LQUzjz72jgQyWUKWP8PfD2kf
 ## Architectural Diagram
 ![architectural Diagram](./images/ArchitecturalDiagram.PNG)
 
-## Instructions
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+
 ### Continuous Integration
 
-#### Part 1
 :white_check_mark: Create SSH Keys in Azure Cloud Shell and add to GitHub
 :white_check_mark: Clone GitHub Repository
 :white_check_mark: Run make all to install, lint and test the code
@@ -94,7 +92,7 @@ Here is the output of the log files from the application:
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
+https://youtu.be/aJkdoRDUgek
 
 [![Python application test with Github Actions](https://github.com/PhilipKarns/CI_CD_Pipeline_Azure/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/PhilipKarns/CI_CD_Pipeline_Azure/actions/workflows/pythonapp.yml)
 <!-- >>>>>>> 55093ffc384c3972fb7a26e5b3f5fbe7e60f4d7d -->
