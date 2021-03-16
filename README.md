@@ -22,7 +22,9 @@ https://docs.google.com/spreadsheets/d/1vs-qzjjO7mzfw8u8LQUzjz72jgQyWUKWP8PfD2kf
 ### Continuous Integration
 
 :white_check_mark: Create SSH Keys in Azure Cloud Shell and add to GitHub
+
 :white_check_mark: Clone GitHub Repository
+
 :white_check_mark: Run make all to install, lint and test the code
 
 Click on the Azure Cloud Shell Icon in the Azure Portal
@@ -50,10 +52,15 @@ Run the Make All command to install, lint, and test the code using the Makefile.
 
 ### Continuous Delivery 
 :white_check_mark: Set up Virtual Environment
+
 :white_check_mark: Create an App Service 
+
 :white_check_mark: Verify the deployed application works
+
 :white_check_mark: Perform a prediction
+
 :white_check_mark: Azure Pipelines Deployment
+
 :white_check_mark: Running Azure App Service from Azure Pipelines
 
 
